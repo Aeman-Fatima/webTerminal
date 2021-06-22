@@ -70,13 +70,23 @@ table th {
     font-size: 1.5em !important;
   }
 }
-/* 
-table td:last-child,
-th:last-child {
-  width: 50%;
-  text-align: right;
+
+/* rating */
+.rating .full {
+  border: none;
+  float: left;
+  color: yellowgreen;
+}
+.rating .empty {
+  color: #e27c6025;
 }
 
-table th:last-child {
-  padding-right: 2.5em;
-} */
+.rating > label:before {
+  content: "\f005";
+  font-family: FontAwesome;
+  margin: 5px;
+  font-size: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 4px;
+}
