@@ -1,9 +1,14 @@
 extends layout
 
 block content
+  - var count = 0;
+  each item in cart
+    - count++
+
   .main
     h1 My shopping Cart
     - var total=0;
+
       table.table
         thead
           th Name
@@ -13,6 +18,7 @@ block content
         tbody
           each item in cart
             - total += Number(item.price)
+
             tr
               td=item.name
               td=item.price
@@ -40,7 +46,13 @@ block content
                                 
               td
                 a(href="/products/cart/remove/"+item._id, class="btn btn-danger") Remove Item
-        tfoot
-          tr
-            td Total
-            td=total
+
+          tfoot
+            tr
+              if count < 3
+                td <b>Total</b>
+                td Add atleast three items to see total <small style="font-size: 8px">(as per reqirement)</small>
+              else
+                td <b>Total</b>
+                td=total
+        
