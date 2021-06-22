@@ -2,17 +2,15 @@ extends ../layout
 
 block content
     .main
-        h1 Add New Product
-        form(action="/products/add",method="post")
+        h1 Edit Product
+            form(action="/products/edit/"+product._id,method="post")
             .form-group
                 label(for="name") Product Name
-                input#name(type="text", class="form-control", name="name")
+                input#name(type="text", class="form-control", name="name", value=product.name)
             .form-group
                 label(for="price") Product Price
-                input#price(type="text", class="form-control", name="price")
-            .form-group
-                label(for="discription") Product Discription
-                input#discription(type="text", class="form-control", name="discription")
+                input#price(type="text", class="form-control", name="price", value=product.price)
+            input(type="submit", class="btn btn-info")
             .form-group
                 label(for="rating") Product Rating
                 input#rating(type="number", min="0", max="5", class="form-control", name="rating")
