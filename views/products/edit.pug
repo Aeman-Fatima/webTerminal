@@ -6,13 +6,13 @@ block content
             form(action="/products/edit/"+product._id,method="post")
                 .form-group
                     label(for="name") Product Name
-                    input#name(type="text", class="form-control", name="name", value=product.name)
+                    input#name(type="text", class="form-control",placeholder="Enter Alphabets Only", pattern="[A-Za-z]+", name="name", value=product.name, required)
                 .form-group
                     label(for="price") Product Price
-                    input#price(type="text", class="form-control", name="price", value=product.price)
+                    input#price(type="text", class="form-control", name="price", value=product.price, required)
                 .form-group
                     label(for="rating") Product Rating
-                    input#rating(type="number", min="0", max="5", class="form-control", name="rating" value=product.rating)
+                    input#rating(type="number", min="0", max="5", class="form-control", name="rating" value=product.rating, required)
                 input(type="submit", class="btn btn-info")
 
 

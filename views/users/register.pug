@@ -6,11 +6,12 @@ block content
     form(action="/register",method="post")
             .form-group
                 label(for="name") Name
-                input#name(type="text", class="form-control", name="name")
+                input#name(type="text", class="form-control", name="name", placeholder="Enter Alphabets Only", required)
             .form-group
                 label(for="email") Email
-                input#email(type="text", class="form-control", name="email")
+                input#email(type="email", class="form-control", name="email", required)
             .form-group
                 label(for="password") Password
-                input#price(type="password", class="form-control", name="password")
+                input#price(type="password", class="form-control", name="password", minlength="8", required)
+                small(for="password") Password must have more than 8 numbers, or characters.
             input(type="submit", class="btn btn-info" value="Register")

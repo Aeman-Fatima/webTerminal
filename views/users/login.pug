@@ -6,8 +6,8 @@ block content
     form(action="/login",method="post")        
             .form-group
                 label(for="email") Email
-                input#email(type="text", class="form-control", name="email" value="aeman@gmail.com")
+                input#email(type="email", class="form-control", name="email" value="aeman@gmail.com", required)
             .form-group
                 label(for="password") Password
-                input#price(type="password", class="form-control", name="password", value="123")
+                input#price(type="password", class="form-control", minlength="8", name="password", value="123qwe456", required)
             input(type="submit", class="btn btn-info" value="Login")

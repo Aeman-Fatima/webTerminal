@@ -6,15 +6,15 @@ block content
         form(action="/products/add",method="post")
             .form-group
                 label(for="name") Product Name
-                input#name(type="text", class="form-control", name="name")
+                input#name(type="text", placeholder="Enter Alphabets Only", pattern="[A-Za-z]+", class="form-control", name="name", required)
             .form-group
                 label(for="price") Product Price
-                input#price(type="text", class="form-control", name="price")
+                input#price(type="number", class="form-control", name="price", required)
             .form-group
-                label(for="discription") Product Discription
+                label(for="discription") Product Description
                 input#discription(type="text", class="form-control", name="discription")
             .form-group
                 label(for="rating") Product Rating
-                input#rating(type="number", min="0", max="5", class="form-control", name="rating")
+                input#rating(type="number", min="0", max="5", class="form-control", name="rating", required)
             input(type="submit", class="btn btn-info")
     
