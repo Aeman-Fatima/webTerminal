@@ -6,24 +6,24 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a  href="/">Home <span class="sr-only">(current)</span></a>
+        <a  href="/">Home <span class="sr-only">(current)</span> <i style="margin-left: 5px; font-size: 16px" class="fa fa-home" aria-hidden="true"></i></a>
       </li>
       <li class="nav-item">
-        <a  href="/products">Products</a>
+        <a  href="/products">Products <i style="margin-left: 5px; font-size: 16px" class="fa fa-list" aria-hidden="true"></i></a>
       </li>
       <li class="nav-item">
-        <a  href="/cart">My Shopping Cart</a>
+        <a  href="/cart">My Shopping Cart  <i style="margin-left: 5px" class="fa fa-shopping-cart"></i> </a>
       </li>
       if !user
         <li class="nav-item">
-          <a  href="/register">Register</a>
+          <a  href="/register">Register  <i style="margin-left: 5px" class="fa fa-user-plus"></i></a>
         </li>
         <li class="nav-item">
-          <a  href="/login">Login</a>
+          <a  href="/login">Login <i  style="margin-left: 5px; font-size: 16px" class="fa fa-sign-in"></i></a>
         </li>
       if user
         <li class="nav-item">
-          <a  href="/logout">Logout</a>
+          <a  href="/logout">Logout <i style="margin-left: 5px; font-size: 16px" class="fa fa-sign-out" aria-hidden="true"></i></a>
         </li>
     </ul>
     

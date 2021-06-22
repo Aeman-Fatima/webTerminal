@@ -13,6 +13,7 @@ body {
   margin-right: 30px;
   letter-spacing: 1px;
   font-size: 13px;
+  padding: 3em;
 }
 
 .heading {
@@ -28,6 +29,8 @@ body {
   background-color: #e27d60 !important;
   color: white !important;
   margin-right: 10px;
+  border: none !important;
+  font-size: 0.9em;
 }
 
 .checked {
@@ -38,3 +41,33 @@ body {
   padding: 1em;
   font-size: 1rem;
 }
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.btn-info {
+  background-color: yellowgreen !important;
+  color: black !important;
+}
+
+.btn-danger {
+  background-color: #cc0f0f !important;
+  color: white !important;
+}
+
+table th {
+  background-color: #e27d60;
+  color: white;
+}
+/* 
+table td:last-child,
+th:last-child {
+  width: 50%;
+  text-align: right;
+}
+
+table th:last-child {
+  padding-right: 2.5em;
+} */
