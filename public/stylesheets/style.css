@@ -66,6 +66,9 @@ table th {
   .nav-item {
     margin-top: 20px !important;
   }
+  body {
+    font-size: 1.2em;
+  }
 }
 /* 
 table td:last-child,
