@@ -62,9 +62,9 @@ table th {
   color: white;
 }
 
-@media (min-width: 992px) {
-  .nav-item > a {
-    padding-top: 20px;
+@media (max-width: 992px) {
+  .nav-item {
+    margin-top: 20px !important;
   }
 }
 /* 
