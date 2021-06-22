@@ -29,3 +29,7 @@ body {
   color: white !important;
   margin-right: 10px;
 }
+
+.checked {
+  color: yellowgreen;
+}
