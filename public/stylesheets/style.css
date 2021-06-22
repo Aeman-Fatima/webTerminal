@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 .navbar {
@@ -60,6 +60,12 @@ h1 {
 table th {
   background-color: #e27d60;
   color: white;
+}
+
+@media (min-width: 992px) {
+  .nav-item > a {
+    padding-top: 20px;
+  }
 }
 /* 
 table td:last-child,
