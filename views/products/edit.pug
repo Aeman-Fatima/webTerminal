@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+    .main
+        h1 Edit Product
+        form(action="/products/edit/"+product._id,method="post")
+            .form-group
+                label(for="name") Product Name
+                input#name(type="text", class="form-control", name="name", value=product.name)
+            .form-group
+                label(for="price") Product Price
+                input#price(type="text", class="form-control", name="price", value=product.price)
+            .form-group
+                label(for="rating") Product Rating
+                input#price(type="hidden", class="form-control", name="rating", value=product.rating)
+            input(type="submit", class="btn btn-info")
+        

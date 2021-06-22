@@ -1,0 +1,31 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  padding: 20px;
+  width: 100%;
+  background-color: #e27d60 !important;
+}
+
+.nav-item > a {
+  color: white;
+  margin-right: 30px;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.heading {
+  margin: 80px;
+}
+
+.main {
+  margin: 80px;
+}
+
+.btn {
+  padding: 0.3em 1.3em;
+  background-color: #e27d60 !important;
+  color: white !important;
+  margin-right: 10px;
+}
