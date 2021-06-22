@@ -33,3 +33,8 @@ body {
 .checked {
   color: yellowgreen;
 }
+
+.form-group {
+  padding: 1em;
+  font-size: 1rem;
+}
